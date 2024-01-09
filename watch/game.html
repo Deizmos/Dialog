@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Game</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<link href="css/index.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="main-container-game">
+			<div class="main-container">
+				<div class="container"><!-- новый навбар -->
+					<div class="background-mobile"></div>
+					<nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
+						<div class="container-fluid">
+							<div class="d-flex align-items-center"><a class="navbar-brand" href="/">
+									<div class="navbar-text"><span class="logo-nav-white"></span><span class="logo-nav-razdelitel"></span></div></a>
+								<div class="d-flex flex-column logo-nav-text"><span>Любимые игры</span><span>с русской озвучкой</span></div>
+							</div>
+							<!-- остальные элементы панели навигации-->
+							<div class="collapse navbar-collapse justify-content-center menu-container" id="navbarNav">
+								<ul class="navbar-nav">
+									<li class="nav-item"><a class="nav-link btn-nav-page active" aria-current="page" href="game.html">Игры</a></li>
+									<li class="nav-item"><a class="nav-link btn-nav-page" aria-current="page" href="#">Тарифы</a></li>
+									<li class="nav-item"><a class="nav-link btn-nav-page" aria-current="page" href="#">Команда проекта</a></li>
+									<li class="nav-item"><a class="nav-link btn-nav-page" aria-current="page" href="contacts.html">Контакты</a></li>
+								</ul>
+							</div>
+							<div class="d-flex align-items-center">
+								<div class="d-flex justify-content-end buttons-container">
+									<button class="btn btn-white btn-header ml-8" type="button"><span>СКАЧАТЬ ПРОГРАММУ</span></button><a href="authorization.html">
+										<button class="btn btn-gradient btn-header ml-8" type="button">ВОЙТИ</button></a>
+									<button class="btn btn-cart-1 ml-8" type="button"></button>
+									<button class="btn btn-cart-2 ml-8 d-none" type="button">23</button>
+								</div>
+								<button class="burger"><span class="burger-item"></span><span class="burger-item burger-item-center"></span><span class="burger-item"></span></button>
+							</div>
+						</div>
+						<div class="mobile-menu d-flex flex-column">
+							<ul class="navbar-nav d-flex flex-column mobile-navbar">
+								<li class="nav-item"><a class="nav-link btn-nav-page active" aria-current="page" href="games.html">Игры</a></li>
+								<li class="nav-item"><a class="nav-link btn-nav-page" aria-current="page" href="#">Тарифы</a></li>
+								<li class="nav-item"><a class="nav-link btn-nav-page" aria-current="page" href="#">Команда проекта</a></li>
+								<li class="nav-item"><a class="nav-link btn-nav-page" aria-current="page" href="contacts.html">Контакты</a></li>
+							</ul>
+							<div class="d-flex flex-column justify-content-end">
+								<button class="btn btn-white btn-header btn-header-white btn-header-mobile" type="button">СКАЧАТЬ ПРОГРАММУ</button>
+								<button class="btn btn-gradient btn-header btn-header-mobile" type="button">ВОЙТИ</button>
+							</div>
+							<svg class="mobile-menu-exit" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12.1149 10L18.5649 3.56503C18.8474 3.28258 19.006 2.89949 19.006 2.50003C19.006 2.10058 18.8474 1.71749 18.5649 1.43503C18.2825 1.15258 17.8994 0.993896 17.4999 0.993896C17.1005 0.993896 16.7174 1.15258 16.4349 1.43503L9.99991 7.88504L3.56491 1.43503C3.28245 1.15258 2.89936 0.993896 2.49991 0.993896C2.10046 0.993896 1.71736 1.15258 1.43491 1.43503C1.15245 1.71749 0.993771 2.10058 0.993771 2.50003C0.993771 2.89949 1.15245 3.28258 1.43491 3.56503L7.88491 10L1.43491 16.435C1.29432 16.5745 1.18272 16.7404 1.10657 16.9232C1.03042 17.106 0.991211 17.302 0.991211 17.5C0.991211 17.6981 1.03042 17.8941 1.10657 18.0769C1.18272 18.2597 1.29432 18.4256 1.43491 18.565C1.57435 18.7056 1.74025 18.8172 1.92304 18.8934C2.10583 18.9695 2.30189 19.0087 2.49991 19.0087C2.69793 19.0087 2.89398 18.9695 3.07677 18.8934C3.25956 18.8172 3.42546 18.7056 3.56491 18.565L9.99991 12.115L16.4349 18.565C16.5744 18.7056 16.7403 18.8172 16.923 18.8934C17.1058 18.9695 17.3019 19.0087 17.4999 19.0087C17.6979 19.0087 17.894 18.9695 18.0768 18.8934C18.2596 18.8172 18.4255 18.7056 18.5649 18.565C18.7055 18.4256 18.8171 18.2597 18.8932 18.0769C18.9694 17.8941 19.0086 17.6981 19.0086 17.5C19.0086 17.302 18.9694 17.106 18.8932 16.9232C18.8171 16.7404 18.7055 16.5745 18.5649 16.435L12.1149 10Z" fill="white"></path>
+							</svg>
+						</div>
+					</nav>
+					<div class="container-game mx-20">
+						<div class="d-flex flex-xl-row flex-column row-game">
+							<div class="col-3 fast-buy">
+								<div class="fast-buy-card"><img class="img-fast-buy" src="images/cart-mp3.jpg">
+									<div class="fast-card-body">
+										<div class="block-download-btn"><a href="#">
+												<svg width="38" height="38" viewbox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M8.07953 0.52002C3.91313 0.52002 0.519531 3.91362 0.519531 8.08002V19.3281L11.8169 24.9719C12.2285 25.1735 12.3977 25.6774 12.1877 26.0974C12.0449 26.3914 11.7503 26.56 11.4395 26.56C11.3135 26.56 11.1882 26.5353 11.0622 26.4681L0.519531 21.2001V29.92C0.519531 34.0864 3.91313 37.48 8.07953 37.48H29.9195C34.0859 37.48 37.4795 34.0864 37.4795 29.92V8.08002C37.4795 3.91362 34.0859 0.52002 29.9195 0.52002H8.07953ZM24.4595 5.56002C28.8611 5.56002 32.4395 9.13842 32.4395 13.54C32.4395 17.9416 28.8611 21.52 24.4595 21.52C23.5355 21.52 22.6452 21.3682 21.7968 21.0574L17.8068 24.0646C18.042 24.7282 18.1595 25.426 18.1595 26.14C18.1595 29.6176 15.3371 32.44 11.8595 32.44C8.38193 32.44 5.55953 29.6176 5.55953 26.14C5.55953 25.9552 5.56754 25.7783 5.57594 25.6019L10.3141 27.971C10.6669 28.1474 11.0531 28.24 11.4395 28.24C12.3971 28.24 13.2621 27.7023 13.6905 26.8455C14.3121 25.6023 13.8082 24.0907 12.565 23.4691L7.98766 21.1755C9.05446 20.3355 10.3979 19.84 11.8595 19.84C12.6155 19.84 13.3624 19.975 14.0596 20.2354L16.9586 16.27C16.6394 15.3964 16.4795 14.4808 16.4795 13.54C16.4795 9.13842 20.0579 5.56002 24.4595 5.56002ZM24.4595 8.92002C21.9179 8.92002 19.8395 10.9984 19.8395 13.54C19.8395 16.0816 21.9179 18.16 24.4595 18.16C27.0011 18.16 29.0795 16.0816 29.0795 13.54C29.0795 10.9984 27.0011 8.92002 24.4595 8.92002ZM24.4595 10.6C26.0932 10.6 27.3995 11.9064 27.3995 13.54C27.3995 15.1737 26.0932 16.48 24.4595 16.48C22.8259 16.48 21.5195 15.1737 21.5195 13.54C21.5195 11.9064 22.8259 10.6 24.4595 10.6Z" fill="white"></path>
+												</svg></a><a href="#">
+												<svg width="37" height="38" viewbox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.59945 0.52002C2.75285 0.52002 0.439453 2.77962 0.439453 5.56002V32.6418L18.4995 37.9328L36.5595 32.6418V5.56002C36.5595 2.77962 34.2461 0.52002 31.3995 0.52002H5.59945ZM6.45945 4.72002H9.89945V7.24002H6.45945V13.12H9.03945V15.64H6.45945V21.52H9.89945V24.04H6.45945C5.03185 24.04 3.87945 22.9144 3.87945 21.52V7.24002C3.87945 5.84562 5.03185 4.72002 6.45945 4.72002ZM11.6195 4.72002H16.7795C18.2071 4.72002 19.3595 5.84562 19.3595 7.24002V13.12C19.3595 14.5144 18.2071 15.64 16.7795 15.64H14.1995V24.04H11.6195V4.72002ZM21.0795 4.72002H23.6595V24.04H21.0795V4.72002ZM27.9595 4.72002H30.5395C31.9671 4.72002 33.1194 5.84562 33.1194 7.24002V10.6H30.5395V7.24002H27.9595V21.52H30.5395V18.16H33.1194V21.52C33.1194 22.9144 31.9671 24.04 30.5395 24.04H27.9595C26.5319 24.04 25.3795 22.9144 25.3795 21.52V7.24002C25.3795 5.84562 26.5319 4.72002 27.9595 4.72002ZM14.1995 7.24002V13.12H16.7795V7.24002H14.1995ZM4.73945 26.56H8.17945C8.65245 26.56 9.03945 26.938 9.03945 27.4V28.24H8.17945V27.61C8.17945 27.4924 8.08485 27.4 7.96445 27.4H4.95445C4.83405 27.4 4.73945 27.4924 4.73945 27.61V30.55C4.73945 30.6676 4.83405 30.76 4.95445 30.76H7.96445C8.08485 30.76 8.17945 30.6676 8.17945 30.55V29.92H7.31945V29.08H9.03945V30.76C9.03945 31.222 8.65245 31.6 8.17945 31.6H4.73945C4.26645 31.6 3.87945 31.222 3.87945 30.76V27.4C3.87945 26.938 4.26645 26.56 4.73945 26.56ZM12.4795 26.56H13.3395L15.9195 31.6H15.0595L14.6295 30.76H11.1895L10.7595 31.6H9.89945L12.4795 26.56ZM16.7795 26.56H17.6395L19.3595 29.92L21.0795 26.56H21.9395V31.6H21.0795V28.24L19.7895 30.76H18.9295L17.6395 28.24V31.6H16.7795V26.56ZM22.7995 26.56H27.0995V27.4H23.6595V28.66H25.3795V29.5H23.6595V30.76H27.0995V31.6H22.7995V26.56ZM28.8195 26.56H32.2595C32.7325 26.56 33.1194 26.938 33.1194 27.4V27.82H32.2595V27.61C32.2595 27.4924 32.1649 27.4 32.0445 27.4H29.0345C28.9141 27.4 28.8195 27.4924 28.8195 27.61V28.45C28.8195 28.5676 28.9141 28.66 29.0345 28.66H32.2595C32.7325 28.66 33.1194 29.038 33.1194 29.5V30.76C33.1194 31.222 32.7325 31.6 32.2595 31.6H28.8195C28.3465 31.6 27.9595 31.222 27.9595 30.76V30.34H28.8195V30.55C28.8195 30.6676 28.9141 30.76 29.0345 30.76H32.0445C32.1649 30.76 32.2595 30.6676 32.2595 30.55V29.71C32.2595 29.5924 32.1649 29.5 32.0445 29.5H28.8195C28.3465 29.5 27.9595 29.122 27.9595 28.66V27.4C27.9595 26.938 28.3465 26.56 28.8195 26.56ZM12.9095 27.4L11.6195 29.92H14.1995L12.9095 27.4Z" fill="white"></path>
+												</svg></a><a href="#">
+												<svg width="39" height="38" viewbox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M8.32008 0.52002C4.05448 0.52002 0.580078 3.91362 0.580078 8.08002V29.92C0.580078 34.0864 4.05448 37.48 8.32008 37.48H30.6801C34.9457 37.48 38.4201 34.0864 38.4201 29.92V8.08002C38.4201 3.91362 34.9457 0.52002 30.6801 0.52002H8.32008ZM11.5199 6.40002H18.6401C21.7877 6.40002 24.006 7.12196 23.748 10.5492C23.5158 13.7076 21.4267 14.2881 21.4267 14.2881C21.4267 14.2881 22.1059 15.5057 21.8651 17.8073C21.6157 20.2349 21.8916 21.1336 22.1238 21.52H17.8926C17.8926 21.52 17.6513 21.0242 17.7717 20.0582C18.1415 17.1854 17.7191 15.64 15.6637 15.64H13.1962L11.8726 21.52H8.19914L11.5199 6.40002ZM14.5887 8.94463L13.7471 13.0954H17.5903C18.7513 13.0954 19.9902 12.7162 20.2912 11.2546C20.6008 9.76783 19.5267 8.94463 18.3915 8.94463H14.5887ZM25.8039 18.16L26.6203 23.1754H31.5401L27.0688 26.4091L28.1001 31.6L23.9462 28.45L18.6401 31.6L21.1344 26.2319L17.7801 23.2H22.9401L25.8039 18.16Z" fill="white"></path>
+												</svg></a><a href="#">
+												<svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M19.9997 0.680176C9.34597 0.680176 0.679688 9.34646 0.679688 20.0002C0.679688 30.6539 9.34597 39.3202 19.9997 39.3202C30.6534 39.3202 39.3197 30.6539 39.3197 20.0002C39.3197 9.34646 30.6534 0.680176 19.9997 0.680176ZM33.0197 25.0091C30.4157 25.0091 28.9037 22.9931 28.9037 22.9931C28.9037 22.9931 27.6437 28.4002 21.6797 28.4002C20.5037 28.4002 18.6557 27.6971 18.6557 27.6971L22.1585 35.7972C21.4504 35.893 20.7338 35.9602 19.9997 35.9602C18.1878 35.9602 16.4532 35.6435 14.8295 35.0874L6.75877 13.155C6.75877 13.155 6.17077 12.147 7.09477 11.895C8.01877 11.643 11.6308 10.887 11.6308 10.887C11.6308 10.887 12.8698 10.4721 13.1428 11.307C13.5628 12.399 16.5557 20.6411 16.5557 20.6411C16.5557 20.6411 17.9837 23.3602 22.0157 23.3602C25.9637 23.3602 26.9717 20.4731 26.8037 20.0531C25.7957 17.5331 22.6096 10.089 22.6096 10.089C22.6096 10.089 22.1056 9.16502 23.2816 8.91302C24.4576 8.66102 26.4736 8.32502 26.4736 8.32502C26.4736 8.32502 27.4018 8.1881 27.8176 8.99702C28.4375 10.2041 32.1797 18.4571 32.1797 18.4571C32.1797 18.4571 33.1037 20.8931 34.9517 20.8931C35.3414 20.8931 35.6522 20.8545 35.9194 20.8057C35.8505 22.1791 35.627 23.5114 35.2331 24.7722C34.7341 24.9285 34.0747 25.0091 33.0197 25.0091Z" fill="white"></path>
+												</svg></a></div>
+										<h4 class="h4-fats-buy">350 руб/навсегда</h4>
+										<p class="fast-buy-text">Внимание! Мы не продаем игры, а только озвучку, будьте внимательны.</p>
+										<button class="btn btn-gradient btn-buy btn-fats-buy">Быстрая покупка</button>
+										<button class="btn btn-white btn-video btn-video-fats-buy">Добавить корзину</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-9 game-card">
+								<div class="short-description">
+									<h3 class="header-short-description">Max Payne 3 - русская озвучка</h3>
+									<p class="voice-short-description">Yandex Озвучка</p>
+									<p class="text-short-description">Max Payne 3 (Макс Пейн 3) начинает новую главу в жизни Макса. Мы окажемся в центре событий по прошествии 9 лет, после предыдущего выпуска игры. Играйте в легендарную игру с русской озвучкой</p>
+								</div>
+								<div class="video-instruction-block">
+									<div class="list-games">
+										<div class="container-scroll">
+											<ul class="nav nav-pills" id="pills-tab" role="tablist">
+												<li class="nav-item" role="presentation">
+													<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Видео</button>
+												</li>
+												<li class="nav-item" role="presentation">
+													<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Инструкция по установке</button>
+												</li>
+											</ul>
+										</div>
+										<div class="tab-content" id="pills-tabContent">
+											<div class="tab-pane fade show active container-video-instruction" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+												<div class="row">
+													<div class="col-xl-6 col-12 video-instruction-card">
+														<div class="img-btn-container"><img class="img-video-preview" src="images/accordion-gta5-1.jpg"><a class="lets-play" data-video="https://www.youtube.com/watch?v=EngW7tLk6R8"><img class="img-lets-play" src="images/btn-play.png"></a></div>
+														<p class="text-video-instruction">Max Payne 3 Русская озвучка Yandex (Intro)</p>
+													</div>
+													<div class="col-xl-6 col-12 video-instruction-card">
+														<div class="img-btn-container"><img class="img-video-preview" src="images/accordion-gta5-1.jpg"><a class="lets-play" data-video="https://www.youtube.com/watch?v=EngW7tLk6R8"><img class="img-lets-play" src="images/btn-play.png"></a></div>
+														<p class="text-video-instruction">Max Payne 3 Русская озвучка Yandex (Intro)</p>
+													</div>
+													<div class="col-xl-6 col-12 video-instruction-card">
+														<div class="img-btn-container"><img class="img-video-preview" src="images/accordion-gta5-1.jpg"><a class="lets-play" data-video="https://www.youtube.com/watch?v=EngW7tLk6R8"><img class="img-lets-play" src="images/btn-play.png"></a></div>
+														<p class="text-video-instruction">Max Payne 3 Русская озвучка Yandex (Intro)</p>
+													</div>
+													<div class="col-xl-6 col-12 video-instruction-card">
+														<div class="img-btn-container"><img class="img-video-preview" src="images/accordion-gta5-1.jpg"><a class="lets-play" data-video="https://www.youtube.com/watch?v=EngW7tLk6R8"><img class="img-lets-play" src="images/btn-play.png"></a></div>
+														<p class="text-video-instruction">Max Payne 3 Русская озвучка Yandex (Intro)</p>
+													</div>
+													<div class="col-xl-6 col-12 video-instruction-card">
+														<div class="img-btn-container"><img class="img-video-preview" src="images/accordion-gta5-1.jpg"><a class="lets-play" data-video="https://www.youtube.com/watch?v=EngW7tLk6R8"><img class="img-lets-play" src="images/btn-play.png"></a></div>
+														<p class="text-video-instruction">Max Payne 3 Русская озвучка Yandex (Intro)</p>
+													</div>
+													<div class="col-xl-6 col-12 video-instruction-card">
+														<div class="img-btn-container"><img class="img-video-preview" src="images/accordion-gta5-1.jpg"><a class="lets-play" data-video="https://www.youtube.com/watch?v=EngW7tLk6R8"><img class="img-lets-play" src="images/btn-play.png"></a></div>
+														<p class="text-video-instruction">Max Payne 3 Русская озвучка Yandex (Intro)</p>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">ыва ыв а ыв а ыва</div>
+										</div>
+									</div>
+								</div>
+								<div class="recommendations">
+									<h2 class="h2-recommendations">Рекомендуем посмотреть</h2>
+									<div class="row row-recommendations">
+										<div class="col-xl-4 col-6 col-recommendations">
+											<div class="card-recommendations"><img class="img-recommendations" src="images/cart-mp3.jpg">
+												<div class="card-body-recommendations">
+													<h5 class="h5-card-title">Max Payne 3 - русский дубляж</h5>
+													<p class="card-text-card-recommendations">350 руб/навсегда</p>
+													<div class="btn-group-cardGame d-flex justify-content-between">
+														<button class="btn btn-gradient btn-buy btn-buy-mobile">Купить</button>
+														<button class="btn btn-white btn-video btn-video-mobile">
+															<div class="btn-s1-play card-mini-play"></div>Видео
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-4 col-6 col-recommendations">
+											<div class="card-recommendations"><img class="img-recommendations" src="images/cart-mp3.jpg">
+												<div class="card-body-recommendations">
+													<h5 class="h5-card-title">Max Payne 3 - русский дубляж</h5>
+													<p class="card-text-card-recommendations">350 руб/навсегда</p>
+													<div class="btn-group-cardGame d-flex justify-content-between">
+														<button class="btn btn-gradient btn-buy btn-buy-mobile">Купить</button>
+														<button class="btn btn-white btn-video btn-video-mobile">
+															<div class="btn-s1-play card-mini-play"></div>Видео
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-4 col-6 col-recommendations">
+											<div class="card-recommendations"><img class="img-recommendations" src="images/cart-mp3.jpg">
+												<div class="card-body-recommendations">
+													<h5 class="h5-card-title">Max Payne 3 - русский дубляж</h5>
+													<p class="card-text-card-recommendations">350 руб/навсегда</p>
+													<div class="btn-group-cardGame d-flex justify-content-between">
+														<button class="btn btn-gradient btn-buy btn-buy-mobile">Купить</button>
+														<button class="btn btn-white btn-video btn-video-mobile">
+															<div class="btn-s1-play card-mini-play"></div>Видео
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- Footer -->
+					<footer>
+						<div class="container-footer">
+							<div class="container-footer-platforms d-flex justify-content-between">
+								<div class="footer-logo d-flex">
+									<div class="logo-nav-white"></div>
+									<div class="logo-nav-razdelitel"></div>
+									<p class="d-flex flex-column logo-nav-text">Любимые игры<br>с русской озвучкой</p>
+								</div>
+								<div class="platforms d-flex align-items-center"><a href="#">
+										<svg width="22" height="19" viewbox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path class="none-color" d="M5.22461 10.8138L7.57626 17.3202C7.57626 17.3202 7.87027 17.929 8.1851 17.929C8.49993 17.929 13.1826 13.0595 13.1826 13.0595L18.3898 3.00586L5.30852 9.13432L5.22461 10.8138Z" fill="#C8DAEA"></path>
+											<path class="none-color" d="M8.34215 12.4814L7.89072 17.2766C7.89072 17.2766 7.70175 18.7459 9.17151 17.2766C10.6413 15.8073 12.0481 14.6743 12.0481 14.6743" fill="#A9C6D8"></path>
+											<path d="M5.26632 11.0458L0.428901 9.47033C0.428901 9.47033 -0.149224 9.23588 0.0369325 8.70422C0.0752539 8.59458 0.152557 8.50129 0.383807 8.34097C1.45565 7.59417 20.2227 0.851491 20.2227 0.851491C20.2227 0.851491 20.7526 0.673005 21.0651 0.791721C21.1425 0.815643 21.212 0.859665 21.2667 0.919282C21.3214 0.978899 21.3593 1.05197 21.3765 1.13103C21.4103 1.27066 21.4244 1.41431 21.4185 1.55784C21.417 1.682 21.4019 1.79709 21.3905 1.97755C21.2762 3.82103 17.8557 17.5795 17.8557 17.5795C17.8557 17.5795 17.6511 18.3846 16.9178 18.4121C16.7376 18.418 16.5581 18.3874 16.39 18.3224C16.2218 18.2574 16.0685 18.1592 15.9392 18.0337C14.5003 16.7965 9.52709 13.4556 8.42816 12.7209C8.40337 12.704 8.3825 12.682 8.36694 12.6564C8.35138 12.6307 8.34151 12.6021 8.33797 12.5723C8.32261 12.4949 8.40685 12.3989 8.40685 12.3989C8.40685 12.3989 17.0665 4.70471 17.2969 3.89698C17.3148 3.8344 17.2474 3.80353 17.1569 3.83094C16.5817 4.04245 6.6112 10.3363 5.51078 11.031C5.43157 11.0549 5.34785 11.06 5.26632 11.0458Z" fill="white"></path>
+										</svg></a><a href="#">
+										<svg width="30" height="19" viewbox="0 0 30 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15.8438 18.8951C5.90504 18.8951 0.236205 12.0843 0 0.750977H4.97848C5.142 9.06932 8.81218 12.5928 11.7193 13.3193V0.750977H16.4073V7.92509C19.2781 7.61633 22.2939 4.34711 23.3114 0.750977H27.9992C27.2179 5.18258 23.9474 8.4518 21.6217 9.79581C23.9474 10.8855 27.6723 13.737 29.0896 18.8951H23.9292C22.8209 15.4443 20.0594 12.7744 16.4073 12.4112V18.8951H15.8438Z" fill="white"></path>
+										</svg></a><a href="#">
+										<svg width="30" height="24" viewbox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M24.6262 2.58588C22.7444 1.70542 20.7322 1.06553 18.6286 0.701172C18.3702 1.16827 18.0684 1.79652 17.8603 2.29629C15.6241 1.95999 13.4084 1.95999 11.2133 2.29629C11.0052 1.79652 10.6965 1.16827 10.4359 0.701172C8.32993 1.06553 6.31547 1.70777 4.43362 2.59055C0.637927 8.32634 -0.391024 13.9197 0.123452 19.4336C2.64096 21.3136 5.08072 22.4556 7.47931 23.203C8.07154 22.3879 8.59973 21.5214 9.05474 20.6083C8.18814 20.279 7.35813 19.8726 6.57386 19.4009C6.78192 19.2467 6.98544 19.0856 7.18207 18.9198C11.9655 21.1571 17.1629 21.1571 21.8892 18.9198C22.0882 19.0856 22.2917 19.2467 22.4974 19.4009C21.7109 19.875 20.8786 20.2813 20.012 20.6106C20.467 21.5214 20.9929 22.3902 21.5874 23.2053C23.9883 22.4579 26.4303 21.3159 28.9478 19.4336C29.5515 13.0415 27.9166 7.49959 24.6262 2.58588ZM9.70643 16.0426C8.27048 16.0426 7.09288 14.702 7.09288 13.0696C7.09288 11.4371 8.24533 10.0943 9.70643 10.0943C11.1676 10.0943 12.3451 11.4348 12.32 13.0696C12.3222 14.702 11.1676 16.0426 9.70643 16.0426ZM19.3649 16.0426C17.9289 16.0426 16.7513 14.702 16.7513 13.0696C16.7513 11.4371 17.9037 10.0943 19.3649 10.0943C20.826 10.0943 22.0036 11.4348 21.9784 13.0696C21.9784 14.702 20.826 16.0426 19.3649 16.0426Z" fill="white"></path>
+										</svg></a><a href="#">
+										<svg width="30" height="22" viewbox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M23.0356 0.714844H6.03971C2.70515 0.714844 0.00195312 3.41804 0.00195312 6.7526V15.2487C0.00195312 18.5833 2.70515 21.2865 6.03971 21.2865H23.0356C26.3702 21.2865 29.0734 18.5833 29.0734 15.2487V6.7526C29.0734 3.41804 26.3702 0.714844 23.0356 0.714844ZM18.9523 11.414L11.0028 15.2055C10.791 15.3065 10.5463 15.1521 10.5463 14.9174V7.09755C10.5463 6.85955 10.7974 6.70531 11.0096 6.81289L18.9592 10.8413C19.1955 10.9611 19.1914 11.3 18.9523 11.414Z" fill="white"></path>
+										</svg></a></div>
+							</div>
+							<div class="container-footer-nav d-flex justify-content-between">
+								<nav class="nav"><a class="nav-link nav-link-footer" aria-current="page" href="/">Главная</a><a class="nav-link nav-link-footer" href="#">Игры</a><a class="nav-link nav-link-footer" href="#">Тарифы</a><a class="nav-link nav-link-footer" href="#">Команда проекта</a><a class="nav-link nav-link-footer" href="#">Контакты</a></nav>
+								<nav class="nav link-documents"><a class="nav-link nav-link-footer" href="#">Политика конфиденциальности</a><a class="nav-link nav-link-footer" href="#">Публичная оферта</a></nav>
+								<p class="trademark">© Dictor Dialog 2023</p>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/blob/master/jquery.touchSwipe.min.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/video.js"></script>
+	</body>
+</html>
