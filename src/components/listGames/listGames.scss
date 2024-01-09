@@ -1,0 +1,97 @@
+.list-games {
+
+}
+
+.h2-list-games {
+  margin-top: 110px;
+  margin-bottom: 48px;
+}
+
+.list-games .nav-link { /* кнопки фильтров */
+  border-radius: 79px;
+  border: 0;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  color: #2C2C2C;
+  font-size: 18px;
+  height: 50px;
+  padding: 0 18px;
+  margin-right: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  -moz-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.list-games .nav-link:hover{
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.14), inset -1px -3px 3px rgba(0, 0, 0, 0.27);
+}
+
+.list-games .nav-link.active {
+  background: linear-gradient(255.03deg, #CE035A 4.5%, #FD3950 91.04%);
+  color: #fff;
+}
+
+.list-games .nav-link.active:hover {
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.14), inset -1px -3px 3px rgba(0, 0, 0, 0.27);
+}
+@media (max-width: 1239px) {
+  .list-games {
+    margin: 0;
+  }
+  .h2-list-games {
+    margin-top: 80px;
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 36px;
+  }
+
+  .container-scroll {
+    width: calc(100% + 32px);
+    overflow-x: auto;
+    margin: 0 -16px;
+  }
+
+  .list-games ul {
+    flex-wrap: nowrap;
+    min-width: 741px;
+    margin-left: 12px;
+  }
+
+  .btn-group-cardGame {
+    flex-direction: column;
+  }
+
+  .subscriptions .btn-group-cardGame {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .list-games .row {
+    margin: 0;
+  }
+
+  .list-games .row .col-6 {
+    padding: 0;
+    width: calc((100% / 3) - 6px);
+  }
+
+  .list-games .row .col-6:not(:nth-child(3n + 3)) {
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 719px) {
+  .list-games .row .col-6 {
+    padding: 0;
+    width: calc(50% - 4px);
+  }
+
+  .list-games .row .col-6:nth-child(3n+3) {
+    margin-right: 8px;
+  }
+
+  .list-games .row .col-6:nth-child(2n) {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,101 @@
+.container-advantage {
+  max-width: 1200px;
+  background: #383838;
+  padding: 0;
+}
+
+.logo-advantage-white { /*лого*/
+  display: inline-block;
+  width: 370px;
+  height: 145px;
+  background-image: url('../../images/logo-nav-white.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 5px 0 32px 24px;
+  position: sticky;
+  top: 110px;
+  bottom: 32px;
+}
+.card-advantage { /*блок преимуществ*/
+  background-color: #444;
+
+  border: 0;
+  border-radius: 34px;
+
+  margin-bottom: 32px;
+  padding: 24px;
+
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 58px;
+  color: #fff;
+}
+
+.card-advantage p {
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 58px;
+}
+
+.card-advantage.card-white {
+  background-color: #EBEBEB;
+  color: #0E0E0E;
+}
+
+.card-advantage.card-white p {
+  color: #0E0E0E;
+}
+
+.text {
+  margin-bottom: 0;
+}
+
+.text:not(:first-child) {
+  margin-top: 64px;
+}
+
+.text.red-text {
+  margin-top: 0;
+  background: linear-gradient(255.03deg, #CE035A 4.5%, #FD3950 91.04%), #0E0E0E;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+@media (max-width: 1239px) {
+  .card-advantage {
+    margin-right: 0;
+    border-radius: 24px;
+  }
+  .container-advantage.d-flex.justify-content-between.mt-110 {
+    margin-top: 42px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+  .mobile-logo .logo-advantage-white{
+    position: static;
+    margin-left: 0;
+    margin-bottom: 35px;
+    width: 216px;
+    height: 84.31px;
+  }
+
+  .mobile-logo {
+    margin: auto;
+    width: auto;
+  }
+
+  .text-red-mobile {
+    background: linear-gradient(255.03deg, #CE035A 4.5%, #FD3950 91.04%), #0E0E0E;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}

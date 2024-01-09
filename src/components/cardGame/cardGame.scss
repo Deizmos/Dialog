@@ -1,0 +1,125 @@
+.list-games ul {
+  margin-bottom: 24px;
+}
+.list-games .card {
+  background-color: #444;
+  color: #fff;
+  border: 0;
+  border-radius: 34px;
+  margin-bottom: 24px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.list-games .card .img-container {
+  position: relative;
+  width: 100%;
+  border-radius: 34px;
+}
+
+.list-games .card .img-container .img {
+  width: 100%;
+}
+
+.list-games .card .img-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset -7px -9px 10px rgba(0, 0, 0, 0.3);
+  //filter: drop-shadow(7px 7px 12px rgba(0, 0, 0, 0.11)) drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  border-radius: 34px;
+}
+
+.list-games .card:hover {
+  box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.11), 2px 3px 5px rgba(0, 0, 0, 0.2), inset -7px -9px 10px rgba(0, 0, 0, 0.3);
+}
+
+.list-games h5 {
+  line-height: 20px;
+}
+
+.list-games .row>* {
+  margin: 0;
+  padding: 0 12px;
+}
+
+.list-games .img {
+  height: auto;
+  filter: drop-shadow(7px 7px 12px rgba(0, 0, 0, 0.11)) drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  border-radius: 34px;
+  background-size: cover;
+  background-position: center;
+}
+
+.list-games .card .card-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.btn-buy {
+  width: 100%;
+  height: 34px;
+  font-size: 18px;
+  margin-right: 4px;
+}
+
+.btn-video {
+  height: 34px;
+  font-size: 18px;
+}
+
+.card-mini-play { /* Маленькая кнопка плей */
+  margin-right: 8px;
+  margin-top: 1px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .btn-video {
+    height: 34px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1239px) {
+  .card-body {
+    padding-bottom: 12px;
+  }
+  .btn-buy-mobile {
+    height: 34px;
+    font-size: 18px;
+    line-height: 1;
+  }
+  .btn-video-mobile {
+    height: 34px;
+    font-size: 18px;
+    margin-top: 4px;
+  }
+
+  .list-games .card {
+    margin-bottom: 12px;
+    border-radius: 24px;
+  }
+
+  .list-games .card .img {
+    height: auto;
+    border-radius: 24px;
+  }
+
+  .card-mini-play { /* Маленькая кнопка плей */
+    margin-right: 8px;
+  }
+
+  .list-games .card .img-container {
+    border-radius: 24px;
+  }
+
+  .list-games .card .img-container::after {
+
+    border-radius: 24px;
+  }
+}
+

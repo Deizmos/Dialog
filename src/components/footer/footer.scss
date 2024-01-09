@@ -1,0 +1,192 @@
+.container-footer {
+  width: 100%;
+  padding-top: 24px;
+  margin-top: 98px;
+  background: #444444;
+  border-radius: 35px;
+}
+
+.logo-nav-white { /*лого*/
+  display: inline-block;
+  width: 82px;
+  height: 32px;
+  background-image: url('../../images/logo-nav-white.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 5px 0 0 8px;
+}
+.logo-nav-razdelitel { /*вертикальная перегородка*/
+  display: inline-block;
+  width: 1px;
+  height: 32px;
+  background-color: #fff;
+  margin: 5px 10px 0 10px;
+}
+
+.container-footer-platforms .logo-nav-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 5px 0 0 0;
+}
+
+.platforms {
+
+}
+
+.container-footer-platforms {
+  margin: 0 24px 24px 24px;
+}
+
+.footer-telegram {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  margin: 5px 0 0 16px;
+}
+
+.footer-vk{
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  margin: 5px 0 0 16px;
+}
+
+.footer-discord {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  margin: 5px 0 0 16px;
+}
+
+.footer-youtube {
+  display: inline-block;
+  width: 30px;
+  height: 22px;;
+  margin: 5px 0 0 16px;
+}
+
+.container-footer-nav {
+  padding: 24px;
+  background: #262626;
+  border-radius: 35px;
+}
+
+nav .nav {
+  color: #FFFFFF;
+}
+
+a.nav-link-footer:active,
+a.nav-link-footer {
+  font-family: 'Manrope',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0;
+}
+
+a.nav-link-footer:hover,
+a.nav-link-footer:focus {
+  background: linear-gradient(255.03deg, #CE035A 4.5%, #FD3950 91.04%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white;
+}
+
+a svg:hover path:not(.none-color) {
+  fill: #FD3950;
+}
+
+a svg {
+  margin-left: 16px;
+}
+a.nav-link-footer:not(:first-child) {
+  margin-left: 16px;
+}
+
+.trademark {
+  font-family: 'Manrope',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1239px) {
+  .container .container-footer {
+    background: #262626;
+    padding: 0;
+    margin-top: 68px;
+  }
+
+  .container-footer-platforms {
+    flex-direction: column;
+    align-items: center;
+
+    background: #444444;
+    border-radius: 24px;
+    padding: 25px 35px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .footer-logo {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .container-footer-nav {
+    flex-direction: column;
+    border-radius: 24px;
+  }
+
+  .container-footer-nav .nav {
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 32px;
+  }
+
+  a.nav-link-footer, .trademark {
+    text-align: center;
+  }
+
+  .container-footer-nav .trademark {
+    margin-top: 8px;
+  }
+
+  a.nav-link-footer:not(:first-child) {
+    margin-left: 0;
+  }
+
+  a.nav-link-footer:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .footer-logo .logo-nav-white {
+    width: 87px;
+    height: 34px;
+  }
+  .container-footer-platforms .logo-nav-text {
+    font-size: 17px;
+    line-height: 17px;
+    margin: 0;
+  }
+  .footer-logo .logo-nav-razdelitel {
+    height: 34px;
+  }
+  .footer-telegram {
+    margin-left: 0;
+  }
+  .logo-nav-white {
+    margin: 0 0 0 8px;
+  }
+  .logo-nav-razdelitel {
+    margin: 0 10px 0 10px;
+  }
+}

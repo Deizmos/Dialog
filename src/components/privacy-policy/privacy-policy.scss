@@ -1,0 +1,96 @@
+.container-privacy-policy {
+  width: 746px;
+  color: #FFFFFF;
+  margin-left: 46px;
+}
+
+.h1-privacy-policy {
+  margin-top: 96px;
+  margin-bottom: 32px;
+  font-family: 'Bebas Neue',sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 58px;
+}
+
+.h3-privacy-policy {
+  font-family: 'Bebas Neue',sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 44px;
+  margin-bottom: 32px;
+}
+
+.h4-privacy-policy {
+  font-family: 'Bebas Neue',sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 22px;
+  margin-bottom: 32px;
+}
+
+.h5-privacy-policy {
+  font-family: 'Manrope',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.text-privacy-policy {
+  font-family: 'Manrope',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 18px;
+}
+
+.main-container-privacy-policy .container-footer {
+  margin-top: 156px;
+}
+
+@media (max-width: 1239px) {
+  .container-privacy-policy {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .h1-privacy-policy {
+    margin-top: 48px;
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 36px;
+  }
+
+  .h3-privacy-policy {
+    font-size: 36px;
+    line-height: 33px;
+    margin-bottom: 24px;
+  }
+
+  .h4-privacy-policy {
+    margin-bottom: 24px;
+  }
+
+  .h5-privacy-policy {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .text-privacy-policy {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .main-container-privacy-policy .container-footer {
+    margin-top: 108px;
+  }
+}

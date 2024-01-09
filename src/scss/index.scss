@@ -1,0 +1,60 @@
+@import url('common/main.scss');
+@import url('../fonts/fonts.scss');
+@import url('../components/header/header.scss');
+@import url('../components/carousel/carousel.scss');
+@import url('../components/listGames/listGames.scss');
+@import url('../components/cardGame/cardGame.scss');
+@import url('../components/voiceActingCarousel/voiceActingCarousel.scss');
+@import url('../components/advantage/advantage.scss');
+@import url('../components/comments/comments.scss');
+@import url('../components/freeDemo/freeDemo.scss');
+@import url('../components/tariffs/tariffs.scss');
+@import url('../components/faq/faq.scss');
+@import url('../components/footer/footer.scss');
+@import url('../components/authorization/authorization.scss');
+@import url('../components/registration/registration.scss');
+@import url('../components/lk/lk.scss');
+@import url('../components/purchasedSubscribe/purchasedSubscribe.scss');
+@import url('../components/basket/basket.scss');
+@import url('../components/privacy-policy/privacy-policy.scss');
+@import url('../components/contacts/contacts.scss');
+@import url('../components/game/game.scss');
+@import url('../components/progressGame/progressGame.scss');
+@import url('../components/preOrderVisible/preOrderVisible.scss');
+@import url('../components/trailerGame/trailerGame.scss');
+@import url('../components/progressProjeckt/progressProjeckt.scss');
+@import url('../components/instructionInstall/instructionInstall.scss');
+@import url('../components/passwordRecovery/passwordRecovery.scss');
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  background: #383838;
+}
+
+.main-container {
+  background: #383838;
+  padding: 0;
+}
+
+.container {
+  max-width: 1240px; /*1200 + 12 + 12*/
+  background: #383838;
+  padding: 0;
+  //margin-top: 20px;
+}
+
+@media (max-width: 1239px) {
+  .container {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .mx-20 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+

@@ -1,0 +1,89 @@
+.container-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px;
+  background: #444444;
+  border-radius: 34px;
+  color: #FFFFFF;
+  margin-top: 24px;
+}
+
+.h3-contacts {
+  font-family: 'Bebas Neue',sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 44px;
+  margin-bottom: 24px;
+}
+
+.text-contacts {
+  font-family: 'Manrope',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+
+.contacts a {
+  display: block;
+  font-family: 'Manrope',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+
+.contacts a:last-child {
+  margin-bottom: 0;
+}
+
+
+
+.container-contacts .logo-nav-white {
+  width: 370px;
+  height: 144px;
+  margin-right: 50px;
+}
+
+.main-container-contacts .container-footer {
+  margin-top: 243px;
+}
+
+
+@media (max-width: 1239px) {
+  .container-contacts {
+    flex-direction: column;
+    padding: 24px 16px;
+    border-radius: 24px;
+    margin-top: 16px;
+  }
+
+  .h3-contacts {
+    font-size: 36px;
+    line-height: 33px;
+  }
+
+  .contacts {
+    margin-left: -20px;
+  }
+  .container-contacts-link {
+    margin-bottom: 12px;
+  }
+
+  .container-contacts .logo-nav-white {
+    width: 216px;
+    height: 84px;
+    margin-right: 6px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+
+  .main-container-contacts .container-footer {
+    margin-top: 80px;
+  }
+}

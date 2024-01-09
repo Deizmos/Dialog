@@ -1,0 +1,79 @@
+<!-- карусель новостей -->
+.carousel-news-podlozka
+    #myCarousel.carousel.slide.carousel-fade.carousel-news.mt-36
+        .carousel-indicators
+            button.active(type='button' data-bs-target='#myCarousel' data-bs-slide-to='0' aria-label='Слайд 1')
+            button(type='button' data-bs-target='#myCarousel' data-bs-slide-to='1' aria-label='Слайд 2')
+        .carousel-inner.carousel-inner-mew
+            .carousel-item.active
+                .container-img
+                    img.d-block.w-100.img.img-fluid.d-block.full-img(src='images/new-1.jpg' alt='...')
+                    img.d-block.w-100.img.img-fluid.d-block.mobile-img(src='images/carousel-mobile.png' alt='...')
+                    .button-mobile
+                        button.carousel-control-prev(type='button' data-bs-target='#myCarousel' data-bs-slide='prev')
+                            span.carousel-control-prev-icon(aria-hidden='true')
+                        button.carousel-control-next(type='button' data-bs-target='#myCarousel' data-bs-slide='next')
+                            span.carousel-control-next-icon(aria-hidden='true')
+                .carousel-caption.text-start
+                    span.span1
+                        | Совсем скоро!
+                        br
+                        | Актёрская озвучка
+                        br
+                        | Red dead redemption 2
+                    span.span2
+                        | Уже готово 40% озвучки, вы можете послушать пример и оформить подписку, чтобы первым получить профессиональную озвучку любимой игры
+                    .mt-32.d-flex.mobile-carousel-buttons
+                        button.btn.btn-gradient.btn-s2.mr-12(type='button') Приобрести подписку
+                        button.btn.btn-white.btn-white-s2-play(type='button') Смотреть видео
+            .carousel-item
+                .container-img
+                    img.d-block.w-100.img.full-img(src='images/new-2.jpg' alt='...')
+                    img.d-block.w-100.img.mobile-img(src='images/accordion-gta4-1.jpg' alt='...')
+                    .button-mobile
+                        button.carousel-control-prev(type='button' data-bs-target='#myCarousel' data-bs-slide='prev')
+                            span.carousel-control-prev-icon(aria-hidden='true')
+                        button.carousel-control-next(type='button' data-bs-target='#myCarousel' data-bs-slide='next')
+                            span.carousel-control-next-icon(aria-hidden='true')
+                .carousel-caption.text-start
+                    span.span1
+                        | исмисми!
+                        br
+                        | апрапрапр
+                        br
+                        | Grand Theft Auto 5
+                    span.span2
+                        | zxcvxcvxc x xc vfg fdsg вым получить профессиональную озвучку любимой игры
+                    .mt-32.d-flex.mobile-carousel-buttons
+                        button.btn.btn-gradient.btn-s2.mr-12(type='button') Приобрести подписку
+                        button.btn.btn-white.btn-white-s2-play(type='button') Смотреть видео
+        .buttons
+            button.carousel-control-prev(type='button' data-bs-target='#myCarousel' data-bs-slide='prev')
+                span.carousel-control-prev-icon(aria-hidden='true')
+            button.carousel-control-next(type='button' data-bs-target='#myCarousel' data-bs-slide='next')
+                span.carousel-control-next-icon(aria-hidden='true')
+    // карусель
+    // подложка с менюшками
+    .row.podlozka
+        .col-4.mb-3
+            .row.g-3.justify-content-end
+                .col-3
+                    .circle-img
+                .col-9
+                    h5 Варианты подписки
+                    p  Много опций. Одна игра. Все игры. Несколько игр
+        .col-4
+            .row.g-3
+                .col-3
+                    .circle-img
+                .col-9
+                    h5 Доступные игры
+                    p Все игры с озвучкой и их demo
+        .col-4
+            .row.g-3
+                .col-3
+                    .circle-img
+                .col-9
+                    h5 Попробовать Demo
+                    p Бесплатное demo на несколько тысяч символов
+    // конец подложки

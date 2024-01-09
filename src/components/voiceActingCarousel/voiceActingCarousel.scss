@@ -1,0 +1,297 @@
+.section-carousel {
+  height: 530px;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  margin-right: 0;
+  padding-right: 20px;
+}
+
+.h2-voice-acting {
+  margin-top: 110px;
+  margin-bottom: 27px;
+}
+
+.section-carousel li {
+  width: 800px;
+  max-height: 650px;
+  display: inline-block;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-carousel li p {
+  color: white;
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+  margin-top: 1.175em;
+}
+
+.section-carousel .items {
+  position: absolute;
+}
+
+.section-carousel .main-pos {
+  margin-left: -32px !important; /*прижимаем первую картинку*/
+  z-index: 3;
+}
+
+.section-carousel .left-pos {
+  opacity: .3;
+  z-index: 1;
+  transform: scale(.70);
+}
+
+.section-carousel .back-pos {
+  margin-left: -32px !important;
+  opacity: .05;
+  transform: scale(.5);
+}
+
+.section-carousel .right-pos {
+  opacity: .3;
+  margin-left: 502px !important; /*на сколько торчит правая картинка*/
+  z-index: 1;
+  transform: scale(.70);
+}
+
+.section-carousel span {
+  position: relative;
+  margin: 0 auto;
+  left: 17em;
+  top: 20em;
+}
+
+.section-carousel .img{
+  height: 450px;
+  box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.4), 2px 3px 5px rgba(0, 0, 0, 0.5), inset -7px -9px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 34px;
+  margin: 5px 20px 20px 0;
+}
+
+/*Анотации к section-carousel*/.section-carousel
+.carusel-igr-caption h5{
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-top: 10px;
+}
+li .carusel-igr-caption p{
+  text-align: left;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+/*скрываем анотацию если не в фокусе*/
+li.back-pos .carusel-igr-caption,
+li.right-pos .carusel-igr-caption,
+li.left-pos .carusel-igr-caption {
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  /*overflow: hidden;*/
+}
+/*Картинка вписана в блок*/
+.back-pos .img,
+.right-pos .img,
+.main-pos .img,
+.left-pos .img {
+  background-size: cover;
+  background-position: center;
+}
+
+/*Кнопка плей*/
+/*блокируем переход по ссылке*/
+.right-pos a{
+  pointer-events: none;
+}
+/*блокируем картинке перетаскивание курсором*/
+a.lets-play img {
+  left: 50%;
+  top: 225px;
+  transition: all 0.3s ease-in-out;
+}
+
+a.lets-play:hover img {
+  margin-top: -5px;
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5)); /*тень в непрозрачных местах png*/
+  cursor: pointer;
+}
+
+/*Модальное окно для видео с ютуба на весь экран*/
+#video-wrap:not(.active) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#video-wrap .video-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#video-wrap .video-container {
+  width: 95%;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.9);
+}
+
+#video-wrap .close-video {
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  border: solid 2px #000;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 150;
+}
+
+#video-wrap .close-video:before, #video-wrap .close-video:after {
+  content: "";
+  width: 60%;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+#video-wrap .close-video:before {
+  transform: rotate(42deg);
+}
+
+#video-wrap .close-video:after {
+  transform: rotate(-42deg);
+}
+
+#video-wrap .close-video:focus {
+  outline: none;
+}
+
+#video-wrap .close-video:hover {
+  background-color: #000;
+}
+
+#video-wrap .close-video:hover:before, #video-wrap .close-video:hover:after {
+  background-color: #fff;
+}
+
+#video-wrap video,
+#video-wrap iframe {
+  position: relative;
+  z-index: 10;
+  border-radius: 12px;
+  box-shadow: 0 0 19px rgba(0, 0, 0, 0.16);
+  width: 100%;
+  height: 100vh;
+  max-height: 85vh;
+  background-color: #000;
+}
+
+#video-wrap video {
+  object-fit: cover;
+}
+
+#video-wrap.active {
+  opacity: 1;
+  visibility: visible;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 12px;
+  height: 100vh;
+  display: flex;
+  transition: all 0.3s ease-in-out;
+  z-index: 9991;
+  align-items: center;
+  justify-content: center;
+}
+
+#video-wrap.active .video-container {
+  transform: scale(1);
+}
+/*анатация к карусели*/
+.carusel-igr-caption h5 {
+
+}
+.carusel-igr-caption p {
+
+}
+
+@media (max-width: 1239px) {
+  .h2-voice-acting {
+    margin-top: 70px;
+    margin-bottom: 24px;
+    font-size: 40px;
+  }
+  .carousel-sl{
+    display: flex;
+    padding: 0;
+
+    height: 186px;
+    margin-left: 12px;
+  }
+  .section-carousel .items {
+    position: relative;
+    padding-right: 14px;
+    margin-left: 0!important;
+    opacity: 1;
+    transform: none;
+    min-width: 271px;
+  }
+
+  .section-carousel .main-pos {
+    margin-left: 0;
+    z-index: 0;
+  }
+
+  a.lets-play img {
+    top: 75px;
+    width: 60px;
+  }
+  .section-carousel .img {
+    height: 154px;
+    margin: 0;
+    border-radius: 24px;
+  }
+  .section-carousel.mobile-section-carousel {
+    height: 186px;
+    position: relative;
+    padding: 0;
+
+    width: calc(100% + 32px);
+    overflow-x: auto;
+    margin: 0 -16px;
+  }
+  .section-carousel .back-pos {
+    margin-left: 0;
+    opacity: 1;
+  }
+
+  .carusel-igr-caption {
+    display: none;
+  }
+
+  .right-pos a {
+    pointer-events: auto;
+  }
+}

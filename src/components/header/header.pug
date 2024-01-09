@@ -1,0 +1,53 @@
+<!-- новый навбар -->
+.background-mobile
+nav.navbar.navbar-expand-lg.bg-dark.sticky-top(data-bs-theme='dark')
+    .container-fluid
+        .d-flex.align-items-center
+            a.navbar-brand(href='/')
+                .navbar-text
+                    span.logo-nav-white
+                    span.logo-nav-razdelitel
+            .d-flex.flex-column.logo-nav-text
+                span Любимые игры
+                span с русской озвучкой
+        // остальные элементы панели навигации
+        #navbarNav.collapse.navbar-collapse.justify-content-center.menu-container
+            ul.navbar-nav
+                li.nav-item
+                    a.nav-link.btn-nav-page.active(aria-current='page' href='games.html') Игры
+                li.nav-item
+                    a.nav-link.btn-nav-page(aria-current='page' href='#') Тарифы
+                li.nav-item
+                    a.nav-link.btn-nav-page(aria-current='page' href='#') Команда проекта
+                li.nav-item
+                    a.nav-link.btn-nav-page(aria-current='page' href='contacts.html') Контакты
+        .d-flex.align-items-center
+            .d-flex.justify-content-end.buttons-container
+                button.btn.btn-white.btn-header.ml-8(type='button')
+                    span СКАЧАТЬ ПРОГРАММУ
+                a(href="authorization.html")
+                    button.btn.btn-gradient.btn-header.ml-8(type='button') ВОЙТИ
+                button.btn.btn-cart-1.ml-8(type='button')
+                button.btn.btn-cart-2.ml-8.d-none(type='button') 23
+            button.burger
+                span.burger-item
+                span.burger-item.burger-item-center
+                span.burger-item
+
+    .mobile-menu.d-flex.flex-column
+        ul.navbar-nav.d-flex.flex-column.mobile-navbar
+            li.nav-item
+                a.nav-link.btn-nav-page.active(aria-current='page' href='games.html') Игры
+            li.nav-item
+                a.nav-link.btn-nav-page(aria-current='page' href='#') Тарифы
+            li.nav-item
+                a.nav-link.btn-nav-page(aria-current='page' href='#') Команда проекта
+            li.nav-item
+                a.nav-link.btn-nav-page(aria-current='page' href='contacts.html') Контакты
+        .d-flex.flex-column.justify-content-end
+            button.btn.btn-white.btn-header.btn-header-white.btn-header-mobile(type='button') СКАЧАТЬ ПРОГРАММУ
+            button.btn.btn-gradient.btn-header.btn-header-mobile(type='button') ВОЙТИ
+        svg.mobile-menu-exit(width='20' height='20' viewbox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(d='M12.1149 10L18.5649 3.56503C18.8474 3.28258 19.006 2.89949 19.006 2.50003C19.006 2.10058 18.8474 1.71749 18.5649 1.43503C18.2825 1.15258 17.8994 0.993896 17.4999 0.993896C17.1005 0.993896 16.7174 1.15258 16.4349 1.43503L9.99991 7.88504L3.56491 1.43503C3.28245 1.15258 2.89936 0.993896 2.49991 0.993896C2.10046 0.993896 1.71736 1.15258 1.43491 1.43503C1.15245 1.71749 0.993771 2.10058 0.993771 2.50003C0.993771 2.89949 1.15245 3.28258 1.43491 3.56503L7.88491 10L1.43491 16.435C1.29432 16.5745 1.18272 16.7404 1.10657 16.9232C1.03042 17.106 0.991211 17.302 0.991211 17.5C0.991211 17.6981 1.03042 17.8941 1.10657 18.0769C1.18272 18.2597 1.29432 18.4256 1.43491 18.565C1.57435 18.7056 1.74025 18.8172 1.92304 18.8934C2.10583 18.9695 2.30189 19.0087 2.49991 19.0087C2.69793 19.0087 2.89398 18.9695 3.07677 18.8934C3.25956 18.8172 3.42546 18.7056 3.56491 18.565L9.99991 12.115L16.4349 18.565C16.5744 18.7056 16.7403 18.8172 16.923 18.8934C17.1058 18.9695 17.3019 19.0087 17.4999 19.0087C17.6979 19.0087 17.894 18.9695 18.0768 18.8934C18.2596 18.8172 18.4255 18.7056 18.5649 18.565C18.7055 18.4256 18.8171 18.2597 18.8932 18.0769C18.9694 17.8941 19.0086 17.6981 19.0086 17.5C19.0086 17.302 18.9694 17.106 18.8932 16.9232C18.8171 16.7404 18.7055 16.5745 18.5649 16.435L12.1149 10Z' fill='white')
+
+

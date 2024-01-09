@@ -1,0 +1,75 @@
+.instruction-install-block {
+  position: relative;
+}
+
+.h2-instruction-install {
+  font-family: 'Bebas Neue',sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 58px;
+  color: #FFFFFF;
+  margin-top: 110px;
+  margin-bottom: 24px;
+}
+
+.container-text-instruction {
+  width: 594px;
+  font-family: 'Manrope',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.img-instruction-bottom {
+  width: 349px;
+  position: absolute;
+  top: 133px;
+  right: 139px;
+  z-index: 1;
+}
+
+.img-instruction-top {
+  width: 349px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.container-progress-game .authorization {
+  width: 361px;
+}
+.container-progress-game .authorization-label-text {
+  text-align: center;
+}
+
+.text-instruction-install {
+  margin-bottom: 18px;
+}
+
+
+@media (max-width: 1239px) {
+  .btn-pre-order-group{
+    flex-direction: column;
+  }
+
+  .img-instruction-bottom,
+  .img-instruction-top{
+    display: none;
+  }
+
+  .container-text-instruction {
+    width: 100%;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .h2-instruction-install {
+    font-size: 40px;
+    line-height: 36px;
+    margin-top: 80px;
+  }
+}
+

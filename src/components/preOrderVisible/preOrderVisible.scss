@@ -1,0 +1,166 @@
+.pre-order-block {
+  position: relative;
+  padding:  90px 64px;
+  //box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.4), 2px 3px 5px rgba(0, 0, 0, 0.5), inset -7px -9px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 34px;
+  margin-top: 36px;
+  margin-bottom: 110px;
+}
+
+
+.img-pre-order::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.4), 2px 3px 5px rgba(0, 0, 0, 0.5), inset -7px -9px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 34px;
+}
+
+.img-pre-order {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 34px;
+  z-index: 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.mobile-preorder {
+  display: none;
+}
+
+
+.pre-order-visible-container {
+  position: inherit;
+  width: 470px;
+  z-index: 1;
+}
+
+.h1-pre-order {
+  font-family: 'Bebas Neue',sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 44px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.text-pre-order {
+  font-family: 'Manrope',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+
+.btn-pre-order {
+  width: 205px;
+  height: 50px;
+  padding: 18px;
+  line-height: 18px;
+}
+
+.btn-play-video {
+  width: 205px;
+  height: 50px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.btn-pre-order-group {
+  display: flex;
+}
+
+@media (max-width: 1239px) {
+  .pre-order-block {
+    padding: 0;
+    background: #444444;
+    border-radius: 24px;
+    margin-top: 16px;
+    margin-bottom: 80px;
+    box-shadow: inherit;
+  }
+  .img-pre-order::after {
+    box-shadow: inset -2.00083px -2.5725px 2.85833px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+  }
+
+  .img-pre-order {
+    position: inherit;;
+    width: 100%;
+    border-radius: 24px;
+    background-image: none!important;
+  }
+  .pre-order-visible-container {
+    width: 100%;
+    padding: 15px 18px 18px 18px;
+  }
+
+  .h1-pre-order {
+    font-size: 36px;
+    line-height: 33px;
+    margin-bottom: 12px;
+  }
+
+  .text-pre-order {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 24px;
+  }
+
+  .btn-pre-order {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .btn-play-video {
+    width: 100%;
+    justify-content: center;
+  }
+  .main-container-prigress-game .carusel-igr-caption {
+    display: block;
+  }
+
+  li.back-pos .carusel-igr-caption, li.left-pos .carusel-igr-caption, li.right-pos .carusel-igr-caption {
+    opacity: 1;
+  }
+
+  .main-container-prigress-game .section-carousel,
+  .main-container-prigress-game .carousel-sl {
+    height: 270px;
+    margin-bottom: 0;
+  }
+
+  .main-container-prigress-game .carousel-sl {
+    margin-left: 16px;
+  }
+
+  .main-container-prigress-game .carusel-igr-caption h5 {
+    margin-top: 24px;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .main-container-prigress-game li .carusel-igr-caption p {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .mobile-preorder {
+    display: block;
+    width: 100%;
+    border-radius: 24px;
+    filter: drop-shadow(2.00083px 2.00083px 3.43px rgba(0, 0, 0, 0.4)) drop-shadow(0.571667px 0.8575px 1.42917px rgba(0, 0, 0, 0.5));
+  }
+}

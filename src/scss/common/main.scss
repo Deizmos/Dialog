@@ -1,0 +1,442 @@
+* {
+  outline: none!important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.form-control-container .error-text {
+  display: none;
+}
+.form-control-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.form-control:focus,
+.form-control:hover {
+  box-shadow: none;
+  border: 1px solid #E11856!important;
+}
+
+.form-control {
+  border: 1px solid transparent!important;
+}
+
+.error .form-control {
+  border: 1px solid #FF0000!important;
+}
+
+.error .error-text {
+  position: absolute;
+  display: block;
+
+  background: #fff;
+  color: #272727;
+  border-radius: 59px;
+
+  padding: 10px;
+  z-index: 1;
+  bottom: 85%;
+  left: 11px;
+
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 98%;
+
+  color: #272727;
+}
+
+.error .error-text::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 14px;
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../../images/tooltip-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  //background-size: cover;
+}
+
+.success::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translate(0,-50%);
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-image: url("../../images/white_check.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+body {
+  background: #2c2c2c;
+  text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* ширина всей полосы прокрутки */
+}
+
+body::-webkit-scrollbar-track {
+  background: #444;        /* цвет зоны отслеживания */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #383838;    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  border: 3px solid #444;  /* отступ вокруг бегунка */
+}
+
+h1, h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: 0;
+}
+h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 64px;
+  margin-top: 110px; /*это 110px отступа*/
+  margin-bottom: 49px; /*это 32px отступа*/
+}
+h4 {
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+h5 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.btn {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 20px;
+
+  border-radius: 79px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 50px;
+  padding: 0 18px;
+
+  transition: box-shadow .3s ease-in-out;
+}
+
+.text1{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 18px;
+}
+.text2{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+}
+.text3{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 14px;
+}
+.container {
+  max-width: 1240px;
+  background: #383838;
+  padding: 0;
+}
+
+/* цвет кнопок */
+.btn-gradient { /*цвет*/
+  border: 0;
+  background: linear-gradient(255.03deg, #CE035A 4.5%, #FD3950 91.04%);
+  color: #fff;
+}
+.btn-gradient:hover {
+  color: #fff;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.14), inset -1px -3px 3px rgba(0, 0, 0, 0.27);
+}
+.btn-white { /*цвет*/
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+.btn-white:hover,
+.btn-white:active,
+.btn.btn-white:first-child:active,
+.btn.btn-white:first-child:hover,
+.btn.btn-white:focus-visible{
+  color: #000!important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.14), inset -1px -3px 3px rgba(0, 0, 0, 0.27) !important;
+}
+
+.btn-gradient:hover,
+.btn-gradient:active,
+.btn.btn-gradient:first-child:active,
+.btn.btn-gradient:first-child:hover,
+.btn.btn-gradient:focus-visible{
+  color: #FFFFFF;
+  background: linear-gradient(255.03deg, #CE035A 4.5%, #FD3950 91.04%);
+  box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.11), 2px 3px 5px rgba(0, 0, 0, 0.2), inset -7px -9px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* размер */
+.btn-s1 { /*в слайдерах, выбор озвучки, авторизация*/
+  font-size: 20px;
+  height: 24px;
+  padding: 0 18px;
+}
+.btn-s2 { /*в слайдере новостей*/
+  font-size: 20px;
+  height: 50px;
+  border-radius: 79px;
+  border-width: 0;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 0 18px;
+  //box-shadow: 0 rgba(0, 0, 0, 0.5); TODO: надо перепроверить
+}
+
+/* иконки плей */
+.btn-s1-play {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url('../../images/play.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+/* спец кнопки */
+.btn-cart-1 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  //
+  //padding-top: 2px;
+  //padding-right: 16px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px;
+  border: 0;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-indent: 30px;
+  width: 58px;
+  height: 34px;
+  font-size: 18px;
+  transition: all 300ms ease-in-out;
+}
+
+.btn-cart-1:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  background-image: url('../../images/cart.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.btn-cart-1:hover,
+.btn-cart-1:active {
+  background: rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.14), inset -1px -3px 3px rgba(0, 0, 0, 0.27) !important;
+}
+
+.btn-cart-2 { /*корзина с товаром*/
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  height: 34px;
+  font-size: 18px;
+  //padding-top: 4px;
+  //padding-right: 16px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 0;
+  color: #D40A59; /*розовый*/
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-indent: 30px;
+}
+.btn-cart-2:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  background-image: url('../../images/cart-2.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.btn-cart-2:hover {
+  color: #D40A59; /*розовый*/
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.14), inset -1px -3px 3px rgba(0, 0, 0, 0.27);
+}
+
+.btn-white-s2-play { /*большая кнопка с значком видео*/
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-indent: 26px;
+  font-size: 20px;
+  height: 50px;
+  border-width: 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  //padding: 0 18px;
+  /* box-shadow: 0 rgba(0, 0, 0, 0.5); надо исправить */
+
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 79px;
+  color: #000;
+}
+.btn-white-s2-play:hover {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.14), inset -1px -3px 3px rgba(0, 0, 0, 0.27);
+  color: #000;
+}
+.btn-white-s2-play:before {
+  content: "";
+  position: absolute;
+  top: 52%;
+  left: 18px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-image: url(../../images/video-play-mini.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  //padding-right: 10px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1239px) {
+  .btn {
+    height: 34px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .btn {
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* стили для MacOs */
+  .btn-gradient { /*цвет*/
+    background: linear-gradient(255.03deg, #CE035A 4.5%, #FD3950 91.04%);
+    color: #fff;
+  }
+  .btn-gradient:hover {
+    color: #fff;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.14), inset -1px -3px 3px rgba(0, 0, 0, 0.27);
+  }
+  .btn-white { /*цвет*/
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+  }
+  .btn-white:hover {
+    color: #000;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.14), inset -1px -3px 3px rgba(0, 0, 0, 0.27);
+  }
+}
+
+
+/* =============================================*/
+/* ================== отступы ================= */
+/* =============================================*/
+.mx-20 { /*отступ для всех элементов страницы*/
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.ml-8 {
+  margin-left: 8px;
+}
+.mr-8 {
+  margin-right: 8px;
+}
+.mr-12 { /*в кнопках каруселе новостей*/
+  margin-right: 12px;
+}
+.mr-5 { /* глюк, отступ будет 12 в кнопках каруселе новостей*/
+  margin-right: 5px;
+}
+.mt-32 { /*в кнопках каруселе новостей*/
+  margin-top: 32px;
+}
+.mt-36 {
+  margin-top: 36px;
+}
+.mt-110 {
+  margin-top: 110px;
+}
+
+.h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 64px;
+
+  margin-top: 133px;		/*отступ для H2 (+23)*/
+  margin-bottom: 49px;	/*отступ для H2 (+17)*/
+  margin-left: 18px;		/*20px*/
+}
+
+
+

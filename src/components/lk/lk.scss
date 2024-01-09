@@ -1,0 +1,159 @@
+.container-lk {
+  max-width: 1200px;
+  margin: 0 20px -24px 20px;
+}
+.welcome {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  margin-top: 40px;
+  background: #444444;
+  border-radius: 34px;
+  margin-bottom: 34px;
+}
+
+.hello-name {
+  font-family: 'Bebas Neue',sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+.date-registration,
+.exit p {
+  font-family: 'Manrope',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.exit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exit p {
+  margin: 0;
+}
+
+.exit svg {
+  margin-left: 4px;
+}
+
+.add-more {
+  background: #444444;
+  border-radius: 34px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.add-more svg {
+  margin-bottom: 25px;
+}
+
+.row .col-add-more {
+  padding-bottom: 24px!important;
+}
+
+.subscriptions .list-games ul {
+  margin-bottom: 42px;
+}
+
+.subscriptions .row {
+  margin: 0 -6px;
+}
+
+.main-lk-container .h2-tariffs {
+  margin-top: 110px;
+  margin-bottom: 36px;
+}
+
+.main-lk-container .container-footer {
+  margin-top: 120px;
+}
+
+@media (max-width: 1239px) {
+  .container-lk {
+    margin: 0;
+  }
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 18px;
+    min-width: 343px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    border-radius: 24px;
+  }
+  .subscriptions .card-body {
+    padding-bottom: 12px;
+  }
+
+  .subscriptions .list-games h5  {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .subscriptions .list-games .card .card-text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .subscriptions .list-games ul {
+    margin-bottom: 8px;
+  }
+
+  .subscriptions .row {
+    margin: 0;
+  }
+
+  .main-lk-container .h2-tariffs {
+    margin-top: 68px;
+    margin-bottom: 24px;
+  }
+
+  .date-registration,
+  .exit p {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .hello-name {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .exit {
+    justify-content: start;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .row .col-add-more {
+    padding-bottom: 12px!important;
+  }
+  .main-lk-container .container-footer {
+    margin-top: 80px;
+  }
+  .main-lk-container .container-scroll {
+    width: 100%;
+    overflow-x: auto;
+    margin: 0 0 16px 0;
+  }
+
+  .main-lk-container .list-games ul {
+    min-width: 200px;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,233 @@
+.name-author-comment { /* имя афтора комментария */
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 44px;
+  display: inline;
+  white-space: pre-line;
+  text-transform: uppercase;
+  background: linear-gradient(255.03deg, #CE035A 4.5%, #FD3950 91.04%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.comment-header { /* заголовок */
+  margin-top: 52px;
+  margin-bottom: 34px;
+}
+
+.comment-text {
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.inner-container {
+  display: inline-block;
+}
+
+p:last-child {
+  margin: 0;
+}
+a.link-to-comment.link-to-comment-black:active,
+a.link-to-comment.link-to-comment-black:hover,
+a.link-to-comment.link-to-comment-black  {
+  color: #0E0E0E;
+}
+
+a.link-to-comment:active, /* Скрывает нативные стили ссылок */
+a.link-to-comment {
+  font-family: 'Manrope',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.link-to-comment:hover {
+  text-decoration: underline;
+}
+
+.col-comment {
+  padding: 0 6px;
+}
+
+.col-comment .card-comment {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    height: 480px;
+    border-radius: 34px;
+    margin: 0;
+
+    flex-flow: column-reverse;
+    background: #444444;
+    color: #FFFFFF;
+  }
+
+.col-comment:nth-of-type(2n) .card-comment {
+  flex-flow: column;
+  background: #EBEBEB;
+  color: #0E0E0E;
+}
+
+.col-comment:nth-of-type(2n) .card-comment .comment-text {
+  color: #0E0E0E;
+}
+
+.comments-container {
+  margin: 0 12px;
+}
+
+.col-comment:nth-of-type(2n) .card-comment .link-to-comment {
+  color: #0E0E0E;
+}
+
+.btm-more-comment {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-comment {
+  height: 50px;
+  color: #2C2C2C;
+  line-height: 34px;
+  margin-top: 32px;
+}
+
+.comments .row {
+  margin-bottom: 16px;
+}
+
+.comments .row:nth-of-type(2n) .col-comment .card-comment {
+  flex-flow: column;
+  background: #EBEBEB;
+  color: #0E0E0E;
+}
+
+.comments .row:nth-of-type(2n) .col-comment .card-comment .comment-text {
+  color: #0E0E0E;
+}
+
+.comments .row:nth-of-type(2n) .col-comment .card-comment .link-to-comment {
+  color: #0E0E0E;
+}
+
+
+.comments .row:nth-of-type(2n) .col-comment:nth-of-type(2n) .card-comment {
+  flex-flow: column-reverse;
+  background: #444444;
+  color: #FFFFFF;
+}
+
+.comments .row:nth-of-type(2n) .col-comment:nth-of-type(2n) .card-comment .comment-text {
+  color: #FFFFFF;
+}
+
+.comments .row:nth-of-type(2n) .col-comment:nth-of-type(2n) .card-comment .link-to-comment {
+  color: #FFFFFF;
+}
+
+@media (max-width: 1239px) {
+  .comments {
+    padding: 0!important;
+  }
+  .comments-container {
+    display: flex;
+  }
+
+  .col-comment .card-comment {
+    height: 379px;
+    width: 271px;
+  }
+
+  .overf-cont {
+    width: calc(100% + 32px);
+    overflow-x: auto;
+    margin: 0 -16px;
+  }
+
+  .comments .row {
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+
+
+  .comments .row:nth-of-type(2n) .col-comment .card-comment {
+    flex-flow: column-reverse;
+    background: #444444;
+    color: #FFFFFF;
+  }
+
+  .comments .row:nth-of-type(2n) .col-comment .card-comment .comment-text {
+
+    color: #FFFFFF;
+  }
+
+  .comments .row:nth-of-type(2n) .col-comment .card-comment .link-to-comment {
+
+    color: #FFFFFF;
+  }
+
+
+  .comments .row:nth-of-type(2n) .col-comment:nth-of-type(2n) .card-comment {
+    flex-flow: column;
+    background: #EBEBEB;
+    color: #0E0E0E;
+  }
+
+  .comments .row:nth-of-type(2n) .col-comment:nth-of-type(2n) .card-comment .comment-text {
+    color: #0E0E0E;
+  }
+
+  .comments .row:nth-of-type(2n) .col-comment:nth-of-type(2n) .card-comment .link-to-comment {
+    color: #0E0E0E;
+  }
+
+  .btm-more-comment {
+    display: none;
+  }
+
+  .comment-text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .name-author-comment {
+    font-size: 36px;
+    line-height: 33px;
+    width: 80%;
+    display: inline-block;
+  }
+  .col-comment .card-comment {
+    padding: 18px;
+  }
+
+  .comment-header {
+    margin-top: 80px;
+    margin-bottom: 24px;
+    font-size: 40px;
+  }
+  .mobile-none {
+    display: none;
+  }
+  .card-advantage p {
+    font-size: 40px;
+    line-height: 36px;
+  }
+  .text:not(:first-child) {
+    margin-top: 32px;
+  }
+  .card-advantage {
+    margin-bottom: 18px;
+  }
+  .text.red-text {
+    margin-top: 0;
+  }
+}

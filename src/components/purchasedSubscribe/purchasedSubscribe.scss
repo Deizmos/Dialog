@@ -1,0 +1,22 @@
+.list-games .row>* {
+  padding: 0 6px;
+}
+
+.subscriptions .card-text  {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1239px) {
+  .subscriptions .card-text  {
+    margin-bottom: 16px;
+  }
+  .subscriptions .btn-buy-mobile,
+  .subscriptions .btn-video-mobile {
+    height: 34px;
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  .subscriptions .card-body {
+    padding: 12px 16px;
+  }
+}

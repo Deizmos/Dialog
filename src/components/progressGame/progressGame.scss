@@ -1,0 +1,36 @@
+
+
+.btn-voice-acting {
+  width: 220px;
+  height: 50px;
+  margin-top: 40px;
+  margin-left:calc(50% - 92px);
+}
+
+.main-container-prigress-game .container-authorization{
+  margin-top: 149px;
+}
+
+
+@media (max-width: 1239px) {
+  .btn-voice-acting {
+    width: 100%;
+    margin-top: 20px;
+    margin-left:0;
+  }
+
+  .main-container-prigress-game .h2-faq{
+    margin-top: 340px;
+  }
+  .main-container-prigress-game .container-footer{
+    margin-top: 68px;
+  }
+  .main-container-prigress-game .container-authorization{
+    margin-top: 80px;
+    border-radius: 24px;
+  }
+
+  .main-container-prigress-game .btn-play-video {
+    margin-left: 0;
+  }
+}
